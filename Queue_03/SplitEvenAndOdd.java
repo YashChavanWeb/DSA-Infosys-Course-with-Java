@@ -1,5 +1,13 @@
 package Queue_03;
 
+/*
+ * Given a queue, split the queue into two queues, one containing odd numbers and the other even numbers. The relative order of elements must be maintained in both the queues. Return an array containing the two queues, the 0th index should contain the queue of odd numbers and the 1st index should contain the queue of even numbers. Implement the logic inside splitQueue() method of the Tester class.
+
+The Queue class has been provided.
+
+Test the functionalities using the main() method of the Tester class.
+ */
+
 class Queue {
 
     private int front;

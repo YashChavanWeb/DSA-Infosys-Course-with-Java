@@ -184,6 +184,8 @@ public class AssignLeftRightShift {
         Node newHead = current.getNext();
         linkedList.getTail().setNext(linkedList.getHead());
         linkedList.setHead(newHead);
+
+        // cleaning up the memory
         current.setNext(null);
     }
 

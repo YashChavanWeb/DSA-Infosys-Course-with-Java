@@ -1,5 +1,9 @@
 package Queue_03;
 
+/*
+ * Given a queue of whole numbers, find the numbers in the queue that are evenly divisible by all the numbers from 1 to 10 and return a new queue with all the evenly divisible numbers. Implement the logic inside findEvenlyDivisibleNumbers() method of the Tester class.
+ */
+
 class Queue {
 
     private int front;

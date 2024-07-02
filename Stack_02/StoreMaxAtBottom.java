@@ -1,5 +1,11 @@
 package Stack_02;
 
+/*
+ * Given a stack of integers, calculate the sum of all the integers present in the stack. Modify the stack such that the sum is present in the bottom of the stack and all the other integers are present in the stack in the same order. Implement the logic inside calculateSum() method of the Tester class.
+
+The Stack class has been provided.
+ */
+
 class Stack {
 
     private int top;
@@ -88,7 +94,7 @@ public class StoreMaxAtBottom {
             newStack.push(temp);
             addition += temp;
         }
-        
+
         // push the sum so that it shows at the bottom
         newStack.push(addition);
 

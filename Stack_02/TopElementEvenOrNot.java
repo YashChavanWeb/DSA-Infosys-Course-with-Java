@@ -1,5 +1,11 @@
 package Stack_02;
 
+/*
+ * Given a stack of integers, find whether the top element of the stack is an even number or not. Return true if the top element is an even number, else return false. Implement the logic inside checkTop() method of the Tester class.
+
+The Stack class has been provided.
+ */
+
 class Stack {
 
     private int top;
