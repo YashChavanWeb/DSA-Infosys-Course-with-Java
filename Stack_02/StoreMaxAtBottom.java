@@ -1,4 +1,4 @@
-package Stack;
+package Stack_02;
 
 class Stack {
 
@@ -61,31 +61,41 @@ class Stack {
     }
 }
 
-class Tester {
-
+public class StoreMaxAtBottom {
     public static void main(String args[]) {
 
         Stack stack = new Stack(10);
         stack.push(15);
-        stack.push(25);
+        stack.push(20);
         stack.push(30);
-        stack.push(33);
+        stack.push(40);
 
+        calculateSum(stack);
+
+        System.out.println("Updated stack");
         stack.display();
+    }
 
-        if (checkTop(stack)) {
-            System.out.println("The top most element of the stack is an even number");
-        } else {
-            System.out.println("The top most element of the stack is an odd number");
+    public static void calculateSum(Stack stack) {
+        Stack newStack = new Stack(11); // Creating a new stack to store elements temporarily
+
+        int addition = 0;
+        System.out.println("Displaying stack elements : ");
+
+        // Transfer elements from original stack to newStack and calculate sum
+        while (!stack.isEmpty()) {
+            int temp = stack.pop();
+            newStack.push(temp);
+            addition += temp;
+        }
+        
+        // push the sum so that it shows at the bottom
+        newStack.push(addition);
+
+        // Transfer elements back from newStack to original stack
+        while (!newStack.isEmpty()) {
+            stack.push(newStack.pop());
         }
     }
 
-    public static boolean checkTop(Stack stack) {
-
-        if (stack.peek() % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 }

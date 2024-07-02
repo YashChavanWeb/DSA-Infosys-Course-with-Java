@@ -1,4 +1,11 @@
-package Linked_Lists;
+package Linked_Lists_01;
+
+/*
+ * Q.1. Given a linked list, find and return the position of a given element in the linked list. If the element is not present, return 0. Implement the logic inside findPosition() method of the Tester class.
+
+Note: The position starts from 1.
+ * 
+ */
 
 class Node {
 
@@ -137,8 +144,7 @@ class LinkedList {
     }
 }
 
-class Tester {
-
+public class ExerciseElementAtPosition {
     public static void main(String args[]) {
 
         LinkedList linkedList = new LinkedList();
@@ -165,10 +171,10 @@ class Tester {
             if (temp.getData().equals(element)) {
                 return position;
             }
-                position++;
-                temp = temp.getNext();
+            position++;
+            temp = temp.getNext();
         }
-        
+
         return 0;
     }
 }
