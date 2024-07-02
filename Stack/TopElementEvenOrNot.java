@@ -1,13 +1,13 @@
 package Stack;
 
 class Stack {
-    
-    private int top; 
-    private int maxSize; 
+
+    private int top;
+    private int maxSize;
     private int[] arr;
 
     Stack(int maxSize) {
-        this.top = -1; 
+        this.top = -1;
         this.maxSize = maxSize;
         arr = new int[maxSize];
     }
@@ -22,8 +22,7 @@ class Stack {
     public boolean push(int data) {
         if (isFull()) {
             return false;
-        }
-        else {
+        } else {
             arr[++top] = data;
             return true;
         }
@@ -62,19 +61,18 @@ class Stack {
     }
 }
 
-
 class Tester {
-      
+
     public static void main(String args[]) {
-            
+
         Stack stack = new Stack(10);
         stack.push(15);
         stack.push(25);
         stack.push(30);
         stack.push(40);
-            
+
         stack.display();
-            
+
         if (checkTop(stack)) {
             System.out.println("The top most element of the stack is an even number");
         } else {
@@ -83,16 +81,11 @@ class Tester {
     }
 
     public static boolean checkTop(Stack stack) {
-        
-        if(stack.peek() % 2 == 0) {
+
+        if (stack.peek() % 2 == 0) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
 }
-
-
-
-
