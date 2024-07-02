@@ -3,6 +3,17 @@ package Array_List_05;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ A restaurant keeps a track of all the orders using an ArrayList and a class Order.
+
+The class Order is implemented and provided to you.
+
+You need to retrieve and return the list of items present in all the orders. Implement the logic inside getItems() method.
+
+Test the functionalities using the main() method of the Tester class.
+ */
+
+ 
 class Order {
     private int orderId;
     private List<String> itemNames;
@@ -45,7 +56,7 @@ class Order {
     }
 }
 
-public class returnListOfItems {
+public class ReturnListOfItems {
 
     public static List<String> getItems(List<Order> orders) {
         List<String> uniqueItems = new ArrayList<>();
