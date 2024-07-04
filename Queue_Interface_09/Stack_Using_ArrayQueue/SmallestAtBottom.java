@@ -5,6 +5,8 @@ import java.util.Deque;
 
 public class SmallestAtBottom {
 
+    // comparing peek element of temp stack with the peek element of the stack
+
     public static Deque<Integer> changeSmallest(Deque<Integer> inputStack) {
         Deque<Integer> tempStack = new ArrayDeque<>();
 
