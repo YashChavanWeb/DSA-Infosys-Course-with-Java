@@ -2,9 +2,7 @@ package Linked_List_02.Assignments;
 
 /*
  *Given a linked list, reverse the list using recursion. Implement the logic inside reverseList() method of the Tester class and create the reverse list using 'reversedLinkedList'.
-
 The LinkedList and Node classes have been provided.
-
 Test the functionalities using the main() method of the Tester class. 
  */
 
